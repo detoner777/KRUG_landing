@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Music Website Landing Page - Codegrid | ig: @codegridweb</title>
+    <meta author="harrnish" content="ig: @harrnish" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ionicons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- jquery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- tweenmax - gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hero-section">
+        <div class="nav">
+          <!-- <div class="artist">KRUG</div> -->
+          <div class="watch"><ion-icon name="play"></ion-icon> watch now</div>
+          <div class="menu"><ion-icon name="menu"></ion-icon></div>
+        </div>
+
+        <div class="hero-gif"></div>
+
+        <div class="hero-title">
+          <h1 class="glitch" data-text="Underrated">Underrated</h1>
+          <p>The new album</p>
+        </div>
+
+        <div class="rotatethis">
+          <h2 id="rotated">stone • fox • swim • tapcheck • wolves</h2>
+        </div>
+
+        <div class="social-media">
+          <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>twitter</li>
+          </ul>
+        </div>
+
+        <!-- <div class="listensong">
+          <ul>
+            <li><ion-icon name="play"></ion-icon></li>
+            <li><ion-icon name="musical-notes"></ion-icon></li>
+            <li><ion-icon name="microphone"></ion-icon></li>
+            <li><ion-icon name="videocam"></ion-icon></li>
+          </ul>
+        </div> -->
+      </div>
+
+      <div class="gif-overlay"></div>
+
+ <!-- video gallery section starts -->
+
+      <div class="content">
+        <h1 class="section-header">Video Gallery</h1>
+        <div class="section-header-underline"></div>
+        <div class="video-gallery">
+          <div class="gallery-item">
+            <img src="https://i.pinimg.com/originals/75/f9/97/75f997ee6acf59dc51bbea05eae36677.jpg" alt="North Cascades National Park" />
+            <div class="gallery-item-caption">
+              <div>
+                <h2>North Cascades</h2>
+                <p>The mountains are calling</p>
+              </div>
+              <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+            </div>
+          </div>
+      
+          <div class="gallery-item ">
+            <img src="https://cdn.davemorrowphotography.com/wp-content/uploads/2016/08/Mount-Rainier-Star-Photography-Workshops-and-Tours-Header-900x394.jpg" alt="Mt. Rainier" />
+            <div class="gallery-item-caption">
+              <div>
+                <h2>Mt. Rainier</h2>
+                <p>14410 feet of adventure</p>
+              </div>
+              <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
+            </div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="https://wqtcq1f34a8kduuv3sc0e76o-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/12394537_web1_180620-pdn-goat-web.jpg" alt="Olympic National Park" />
+            <div class="gallery-item-caption">
+              <div>
+                <h2>Olympic National Park</h2>
+                <p>Mountains, rain forests, wild coastlines</p>
+              </div>
+              <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
+            </div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="https://www.sciencenewsforstudents.org/sites/default/files/main/articles/cvob0070_openerfree.jpg" alt="Mount St. Helens" />
+            <div class="gallery-item-caption">
+              <div>
+                <h2>Mount St. Helens</h2>
+                <p>The one and only</p>
+              </div>
+              <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
+            </div>
+          </div>
+          
+          <!-- video gallery section ends-->
+      
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"
+    ></script>
+
+    <script>
+      const circleType = new CircleType(document.getElementById("rotated"));
+
+      TweenMax.from(".artist", 2, {
+        delay: 5.4,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".watch", 2, {
+        delay: 5.5,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".menu", 2, {
+        delay: 5.6,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".rotatethis", 2, {
+        delay: 6,
+        opacity: 0,
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.staggerFrom(
+        ".social-media ul li",
+        2,
+        {
+          delay: 5.7,
+          opacity: 0,
+          y: 20,
+          ease: Expo.easeInOut
+        },
+        0.1
+      );
+
+      TweenMax.staggerFrom(
+        ".listensong ul li",
+        2,
+        {
+          delay: 5.9,
+          opacity: 0,
+          y: 20,
+          ease: Expo.easeInOut
+        },
+        0.1
+      );
+
+      TweenLite.fromTo(
+        ".hero-title h1",
+        0.3,
+        {
+          x: -6,
+          y: 2,
+          opacity: 0
+        },
+        {
+          delay: 5,
+          x: 6,
+          y: -2,
+          opacity: 1,
+          ease: RoughEase.ease.config({
+            strength: 8,
+            points: 40,
+            template: Linear.easeNone,
+            randomize: false
+          }),
+          clearProps: "all"
+        }
+      );
+
+      TweenLite.fromTo(
+        ".hero-title p",
+        0.3,
+        {
+          x: -6,
+          y: 2,
+          opacity: 0
+        },
+        {
+          delay: 9,
+          x: 6,
+          y: -2,
+          opacity: 1,
+          ease: RoughEase.ease.config({
+            strength: 8,
+            points: 40,
+            template: Linear.easeNone,
+            randomize: false
+          }),
+          clearProps: "all"
+        }
+      );
+    </script>
+  </body>
+</html>
