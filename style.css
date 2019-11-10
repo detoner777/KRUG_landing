@@ -3,10 +3,13 @@ html, body {
       padding: 0%;
       width: 100%;
       height: 100vh;
-      font-family: "Monument Extended";
-      background: url(https://media.giphy.com/media/3oEduMhFrYvKk4giac/giphy.gif) no-repeat 50% 50%;
-      background-size: cover;
+      font-family: "Helvetica";
+      background: url(https://media.giphy.com/media/3oEduMhFrYvKk4giac/giphy.gif) no-repeat 50% 50%; 
+      /* background-size: cover; */
+      background-size: 100% 100%;
       text-transform: uppercase;
+     
+             
 }
 
 .gif-overlay {
@@ -15,6 +18,8 @@ html, body {
       padding: 0%;
       width: 100%;
       height: 100vh;
+      
+      
       background: rgba(14, 14, 14, 0.8);
 }
 
@@ -100,12 +105,14 @@ html, body {
       left: 38%;
       transform: translate(-50%, -50%);
       mix-blend-mode: difference;
+
+      font: bold  110% serif;
 }
 
 .hero-title h1 {
-      color: red;
+      color: white;
       text-transform: uppercase;
-      font-size: 80px;
+      font-size: 150px;
       margin-bottom: 0%;
 }
   
@@ -230,7 +237,7 @@ html, body {
     }
 
 @media(max-width: 900px) {
-      .watch, .rotatethis, .hero-title p, .hero-gif {
+      .watch, .rotatethis,  .hero-gif {
             display: none !important;
       }
 
@@ -240,7 +247,10 @@ html, body {
       }
 
       .hero-title h1 {
-            font-size: 32px;
+            font-size: 62px;
+      }
+      .hero-title p {
+
       }
 }
 
@@ -248,6 +258,7 @@ html, body {
 /* Video gallery style section */
 
 .section-header {
+      
       text-align: center;
       margin: 60px auto 20px auto;
     
@@ -258,6 +269,7 @@ html, body {
     }
     
     .section-header-underline {
+          
       border: 1px solid #222;
       width: 3rem;
       margin: 0 auto;
@@ -265,13 +277,15 @@ html, body {
     }
     
     .video-gallery {
+          
       position: relative;
       margin: 0 auto;
-      max-width: 1000px;
+      max-width: 1100px;
       text-align: center;
     }
     
     .video-gallery .gallery-item {
+     z-index: 1;
       position: relative;
       float: left;
       overflow: hidden;
@@ -293,6 +307,7 @@ html, body {
       transition: opacity 0.35s, transform 0.35s;
       transform: translate3d(-23px, 0, 0);
       backface-visibility: hidden;
+       background: black;
     }
     
     .video-gallery .gallery-item .gallery-item-caption {
