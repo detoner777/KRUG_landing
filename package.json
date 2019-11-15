@@ -1,0 +1,22 @@
+{
+  "name": "krug_landing",
+  "version": "1.0.0",
+  "description": "server for krug_landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detoner777/KRUG_landing.git"
+  },
+  "author": "Alexey Lisenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/detoner777/KRUG_landing/issues"
+  },
+  "homepage": "https://github.com/detoner777/KRUG_landing#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
