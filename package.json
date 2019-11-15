@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-   "repository": {
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/detoner777/KRUG_landing.git"
   },
@@ -19,5 +23,8 @@
   "homepage": "https://github.com/detoner777/KRUG_landing#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "12.8.0"
   }
-  }
+}
